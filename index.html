@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--------------------------------------------------------------------------------------->
+<!-- head                                                                              -->
+<!--------------------------------------------------------------------------------------->
 <head>
-    <meta charset="UTF-8">
-    <link rel = "stylesheet" href="index.css"/>
-    <title>Document</title>
-</head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>  
+
+<!--------------------------------------------------------------------------------------->
+<!-- body                                                                              -->
+<!--------------------------------------------------------------------------------------->
 <body>
-    <h2> 이건 css 를 통해 씀.</h2>
+<!-- button -->
+    <div>
+       <button type="button" class="build" id="btid_build">Butild menu</button>
+       <button type="button" class="struct" id="btid_structure">Structure</button>
+    </div>
+
+    <Div id="pop_build" style="position:absolute; left:100px; top:100px; width:100px; height:100px; z-index:1;display:none;">
+        <img src="build_menu.png">
+    </Div>
+
+    <Div id="pop_struct" style="position:absolute; left:200px; top:100px; width:100px; height:100px; z-index:1;display:none;">
+        <img src="build_menu.png">
+    </Div>
+
+
+
+
+    <div class="container">
+        <div draggable="true" class="box">A</div>
+        <div draggable="true" class="box">B</div>
+        <div draggable="true" class="box">C</div>
+    </div>
+
+    <script type="text/javascript" src="hw.js"></script> 
 </body>
 </html>

@@ -1,3 +1,130 @@
-h2{
-    color:red;
+/* Copyright 2018 Google LLC.
+SPDX-License-Identifier: Apache-2.0 */
+
+/* CSS files add styling rules to your content */
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+
+    height: 90vh;
+    background-image: url("bg_1250x800.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: url("bg_1250x800.png") no-repeat center/cover;
 }
+
+/*-------------------------------------------------------------------------------------------------------*/
+/* 버튼 스타일
+/*-------------------------------------------------------------------------------------------------------*/
+/* 기본 버튼 스타일 제거 */
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+/* 버튼 ------------------------------ */
+button{
+    width:200px;
+    height:50px;
+    font-size: 1.4em;
+
+    color: white; 
+    text-align:center;
+    justify-content: center;
+    background-color: #2396e2a0;
+    border-radius: 10px;
+    padding: 15px 25px;
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.21);
+    border-bottom-color: rgba(0,0,0,0.34);
+    text-shadow:0 1px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 
+                0 2px 0 -1px rgba(0,0,0,0.13), 
+                0 3px 0 -1px rgba(0,0,0,0.08), 
+                0 3px 13px -1px rgba(0,0,0,0.21);
+    
+}
+
+button.build{
+    position : absolute;
+    top : 95%;
+    left:40%;
+    transform : translate (-50%,-50%);
+}
+button.build:focus{
+    outline:0;
+}
+button.build:hover{
+    background-color: rgb(35, 160, 218);
+    cursor:pointer;
+    transition : 0.5s
+}
+
+
+button.struct{
+    position : absolute;
+    top : 95%;
+    left:50%;
+    transform : translate (-50%,-50%);
+}
+
+button.struct:focus{
+    outline:0;
+}
+
+button.struct:hover{
+    background-color: #7fccf0ff;
+    cursor:pointer;
+    transition : 0.5s
+}
+
+
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.box {
+    border: 3px solid #666;
+    background-color: #ddd;
+    border-radius: .5em;
+    padding: 10px;
+    cursor: move;
+}
+
+.box.over {
+    border: 3px dotted #666;
+}
+
+[draggable] {
+    user-select: none;
+}
+
+
+
+
+.tradetype_area {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    width: 90%;
+    height: auto;
+    overflow: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background: #fff;
+    padding: 10px 15px;
+    box-shadow: 0px 0px 0px 100vh rgba(0, 0, 0, 0.7);
+    }
+
+
+    
